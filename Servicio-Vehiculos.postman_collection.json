@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "76982649-222a-42c1-90a9-d5a59ab0b9ce",
+		"name": "Servicio-Vehiculos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23877360"
+	},
+	"item": [
+		{
+			"name": "Health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/vehiculos/ping",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"vehiculos",
+						"ping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearVehiculo1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"marca\": \"Toyota\",\r\n    \"placa\": \"ABC123\",\r\n    \"modelo\": \"2021\",\r\n    \"kilometraje\": 15.550,\r\n    \"color\": \"Negro\",\r\n    \"cilindraje\": 750.0,\r\n    \"tipo_combustible\": \"Gasolina\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/vehiculos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"vehiculos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerVehiculo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/vehiculos/d4df780a-a219-448f-b46d-5613c8bb1753",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"vehiculos",
+						"d4df780a-a219-448f-b46d-5613c8bb1753"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Vehiculos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/vehiculos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"vehiculos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateVehiculo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/vehiculos/d4df780a-a219-448f-b46d-5613c8bb1753",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"vehiculos",
+						"d4df780a-a219-448f-b46d-5613c8bb1753"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/vehiculos/d4df780a-a219-448f-b46d-5613c8bb1753",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"vehiculos",
+						"d4df780a-a219-448f-b46d-5613c8bb1753"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
